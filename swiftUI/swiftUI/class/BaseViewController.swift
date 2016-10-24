@@ -17,6 +17,7 @@ class BaseViewController: UIViewController {
         self.view.backgroundColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "icon1"), forBarMetrics: UIBarMetrics.Default)
         self.automaticallyAdjustsScrollViewInsets = false
     }
 

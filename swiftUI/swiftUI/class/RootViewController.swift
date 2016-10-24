@@ -15,12 +15,12 @@ class RootViewController: BaseViewController,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "SwiftUI"
-        dataArray = ["UIView","UILabel","UIImage","UIImageView","UIButton","UITextFile","UITextView","UIScrollView","UICollectionView","AVPlayer","AVAudioPlayer"]
+        dataArray = ["UIView","UILabel","UIImage","UIImageView","UIButton","UITextFile","UITextView","UIScrollView","UICollectionView","AVPlayer","AVAudioPlayer","UIDatePicker"]
         createUI()
     }
 
     func createUI() {
-        let tb = UITableView.init(frame: self.view.bounds, style: .Plain)
+        let tb = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height-64), style: .Plain)
         tb.delegate = self;
         tb.dataSource = self;
         self.view.addSubview(tb)
@@ -69,6 +69,9 @@ class RootViewController: BaseViewController,UITableViewDelegate,UITableViewData
             break
         case 10:
             self.navigationController?.pushViewController(AVAudioViewController(), animated: true)
+            break
+        case 11:
+            self.navigationController?.pushViewController(datePickerViewController(), animated: true)
             break
         default:
             break

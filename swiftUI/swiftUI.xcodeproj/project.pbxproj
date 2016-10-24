@@ -26,6 +26,7 @@
 		328163AE1DBDDFC800201A9E /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328163AD1DBDDFC800201A9E /* CollectionViewViewController.swift */; };
 		328163B01DBDECAF00201A9E /* AVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328163AF1DBDECAF00201A9E /* AVViewController.swift */; };
 		328163B81DBDFBB700201A9E /* AVAudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328163B71DBDFBB700201A9E /* AVAudioViewController.swift */; };
+		4EAAD72F1DBE65DA00D701AE /* datePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAAD72E1DBE65DA00D701AE /* datePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		328163AD1DBDDFC800201A9E /* CollectionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
 		328163AF1DBDECAF00201A9E /* AVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVViewController.swift; sourceTree = "<group>"; };
 		328163B71DBDFBB700201A9E /* AVAudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAudioViewController.swift; sourceTree = "<group>"; };
+		4EAAD72E1DBE65DA00D701AE /* datePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = datePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				328163AD1DBDDFC800201A9E /* CollectionViewViewController.swift */,
 				328163AF1DBDECAF00201A9E /* AVViewController.swift */,
 				328163B71DBDFBB700201A9E /* AVAudioViewController.swift */,
+				4EAAD72E1DBE65DA00D701AE /* datePickerViewController.swift */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				328163A61DBDD1BE00201A9E /* ButtonViewController.swift in Sources */,
 				3281639A1DBDA99800201A9E /* View_ViewController.swift in Sources */,
 				328163831DBDA25D00201A9E /* AppDelegate.swift in Sources */,
+				4EAAD72F1DBE65DA00D701AE /* datePickerViewController.swift in Sources */,
 				328163A21DBDB75600201A9E /* ImageViewController.swift in Sources */,
 				328163A81DBDD55300201A9E /* TextFileViewController.swift in Sources */,
 				328163AC1DBDDA9900201A9E /* ScrollViewViewController.swift in Sources */,
@@ -358,6 +362,7 @@
 				328163931DBDA25D00201A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
