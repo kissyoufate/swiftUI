@@ -10,12 +10,12 @@ import UIKit
 
 class RootViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var dataArray = []
+    var dataArray = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "SwiftUI"
-        dataArray = ["UIView","UILabel","UIImage","UIImageView","UIButton","UITextFile","UITextView","UIScrollView","UICollectionView","AVPlayer","AVAudioPlayer","UIDatePicker"]
+        dataArray = ["UIView","UILabel","UIImage","UIImageView","UIButton","UITextFile","UITextView","UIScrollView","UICollectionView","AVPlayer","AVAudioPlayer","UIDatePicker","UIPickerView","actionsheet && alert"]
         createUI()
     }
 
@@ -33,7 +33,7 @@ class RootViewController: BaseViewController,UITableViewDelegate,UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cellID = "cellid"
         let cell = UITableViewCell.init(style: .Default, reuseIdentifier: cellID)
-        cell.textLabel?.text = dataArray[indexPath.row] as? String
+        cell.textLabel?.text =  "\(indexPath.row+1)" + ". " + dataArray[indexPath.row]
         return cell
     }
 
@@ -72,6 +72,12 @@ class RootViewController: BaseViewController,UITableViewDelegate,UITableViewData
             break
         case 11:
             self.navigationController?.pushViewController(datePickerViewController(), animated: true)
+            break
+        case 12:
+            self.navigationController?.pushViewController(PickerViewViewController(), animated: true)
+            break
+        case 13:
+            self.navigationController?.pushViewController(Alert_ActionSheet_ViewController(), animated: true)
             break
         default:
             break
